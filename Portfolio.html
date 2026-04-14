@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <title>pengurus page</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    section {
+      padding: 80px 0;
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .logo-navbar {
+      height: 40px;
+    }
+
+    .modal-backdrop.show {
+      backdrop-filter: blur(5px);
+    }
+  </style>
 </head>
+
 <body>
 
+<!-- 🔝 NAVBAR -->
 <nav class="navbar navbar-expand-sm bg-light" style="justify-content: right;">
     <ul class="navbar-nav gap-3">
       <li class="nav-item">
@@ -32,63 +55,223 @@
     </ul>
   </div>
 </nav>
-<div class="container text-center mt-5">
-    <h3>Portfolio</h3>
-    <p style="margin-top: 45px;">Ini adalah galeri Kegiatan Rotaract</p>
-    <div class="row mt-4">
-    <div class="col-md-4 mb-4">
-      <img src="kegiatan3.jpeg" class="img-fluid rounded" style="height:220px; width: 400px;object-fit:cover;">
-      <h6 class="mt-3">Proker 1</h6>
-      <p>This is a paragraph text block</p>
+
+<!-- 👥 PENGURUS -->
+<section id="pengurus" class="text-center">
+  <div class="container">
+
+    <h2 class="fw-bold">Our Leadership</h2>
+    <p class="text-muted">Struktur inti UKM Roktarat</p>
+
+    <div class="row mt-4 justify-content-center">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Ketua UKM</h5>
+            <p class="text-muted">Bobby miracle hardiansyah </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Sekretaris </h5>
+            <p class="text-muted">Samuel Delon Kurniawan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Bendahara</h5>
+            <p class="text-muted">Nama Sekretaris</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="kegiatan4.jpeg" class="img-fluid rounded" style="height:220px; width: 400px;object-fit:cover;">
-      <h6 class="mt-3">Proker 2</h6>
-      <p>This is a paragraph text block</p>
+  </div>
+</section>
+
+<!-- 🧩 DIVISI -->
+<section id="divisi" class="bg-light text-center">
+  <div class="container">
+
+    <h2 class="fw-bold">Divisi</h2>
+    <p class="text-muted">Bagian dalam UKM</p>
+
+    <div class="row mt-4 justify-content-center">
+
+      <!-- ACARA -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Acara</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalAcara">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AKPER -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Akper</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalAkper">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- DANA -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Dana</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalDana">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBLIKASI -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Publikasi Deskripsi</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPublikasi">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KONSUMSI -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Konsumsi</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalKonsumsi">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="kegiatan5.jpeg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 3</h6>
-      <p>This is a paragraph text block</p>
+  </div>
+</section>
+
+<!-- MODAL ACARA -->
+<div class="modal fade" id="modalAcara" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Acara</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="kegiatan1 Rotract.jpeg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 4</h6>
-      <p>This is a paragraph text block</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="Kegiatan2 Rotaract.jpeg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 5</h6>
-      <p>This is a paragraph text block</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="IMG_3544.JPG" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 6</h6>
-      <p>This is a paragraph text block</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="dlt.jpg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 7</h6>
-      <p>This is a paragraph text block</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="dlt.jpg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 8</h6>
-      <p>This is a paragraph text block</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="dlt.jpg" class="img-fluid rounded" style="height:220px; width: 400px; object-fit:cover;">
-      <h6 class="mt-3">Proker 9</h6>
-      <p>This is a paragraph text block</p>
-    </div>
+  </div>
 </div>
+
+<!-- MODAL AKPER -->
+<div class="modal fade" id="modalAkper" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Akper</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- MODAL DANA -->
+<div class="modal fade" id="modalDana" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Dana</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- MODAL PUBLIKASI -->
+<div class="modal fade" id="modalPublikasi" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Publikasi</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL KONSUMSI -->
+<div class="modal fade" id="modalKonsumsi" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Konsumsi</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="bg-light mt-5">
   <div class="container py-2 d-flex justify-content-center">
 
     <!-- Kiri -->
-    <p class="mb-0">Copyright © 2026 <b>Web portfolio</b>. All rights reserved.</p>
+    <p class="mb-0">Copyright © 2026 <b>Web pengurus</b>. All rights reserved.</p>
 
     <!-- Kanan (ICON) -->
     <div>
@@ -101,5 +284,8 @@
   </div>
 </footer>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
